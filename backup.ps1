@@ -3,9 +3,12 @@
 # 执行日志写入 backup_log.txt
 
 $ErrorActionPreference = "Stop"
+$env:Path = "C:\Program Files\Git\cmd;" + $env:Path
 $repo = "E:\1000天营养启航"
 $log  = Join-Path $repo "backup_log.txt"
 $ts   = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+
+Add-Content -LiteralPath $log -Value "$ts | START: 备份脚本开始执行"
 
 try {
     Set-Location -LiteralPath $repo
