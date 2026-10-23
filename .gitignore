@@ -1,0 +1,17 @@
+# ===== 敏感信息：绝不提交到 GitHub =====
+# DeepSeek API Key 等凭证密文与配置
+.secrets/
+.env
+.env.*
+*.key
+*.pem
+*.p12
+
+# ===== 本地工具与临时文件 =====
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+
+# ===== 日志按需保留（如需备份可移除下行） =====
+# backup_log.txt
