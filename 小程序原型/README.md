@@ -34,6 +34,11 @@ npm run build
 npm run typecheck
 ```
 
+## 源码归档
+
+- 完整源码已归档于本目录 `src/` 下，与构建平台项目结构一致（`src/data/` 数据层 6 文件、`src/pages/` 页面组件 7 个、`src/index.tsx`、`src/index.css`、`src/tailwind-theme.css` 主题）
+- 全部源码概览与逐文件说明见 `原型源码导出.md`
+
 ## 注意事项
 
 - 代码中使用的 3 张 AI 配图（Hero 主视觉、营养食物插画、宝宝喂养场景）托管在平台静态资源服务上；本地部署时需替换为自有图片，放入 `public/` 或 `src/assets/` 并修改页面中图片 URL。
@@ -42,4 +47,4 @@ npm run typecheck
 
 ## 源码导出
 
-完整源码导出内容见同目录 `原型源码导出.md`。如需某文件的完整原始代码（如 `src/data/stages.ts` 全量569行、`src/data/nutrients.ts` 全量358行等），可在对话中要求从构建平台重新导出后补入本目录。
+完整源码导出内容见同目录 `原型源码导出.md`，且全部文件已按项目结构落盘到 `src/` 目录（含数据层、页面组件、入口与样式）。如需构建平台内其他文件（如 57 个 shadcn/ui 组件、`typography.css`）的原始代码，可在对话中要求重新导出后补入。
